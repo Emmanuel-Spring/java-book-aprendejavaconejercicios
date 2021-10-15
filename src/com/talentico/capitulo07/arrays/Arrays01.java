@@ -23,9 +23,5 @@ public class Arrays01 {
 
         int suma = n[0] + n[3];
         System.out.println("\nEl primer elemento del array más el último suman:   " + suma);
-
-
-
-
     }
 }
