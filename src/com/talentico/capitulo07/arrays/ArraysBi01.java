@@ -11,7 +11,7 @@ package com.talentico.capitulo07.arrays;
 public class ArraysBi01 {
     public static void main(String[] args) {
 
-            int[][] n = new int[3][2];   // Arrays de 3 filas x 2 columnas
+            int[][] n = new int[3][2];    // Arrays de 3 filas x 2 columnas
 
             n[0][0] = 20;
             n[1][0] = 67;
