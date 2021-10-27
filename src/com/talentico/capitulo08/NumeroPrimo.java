@@ -4,7 +4,7 @@ public class NumeroPrimo {
 
     public static void main(String[] args) {
      
-        System.out.print("Introduce un número entero positivo");
+        System.out.print("Introduce un número entero positivo:  ");
         int n = Integer.parseInt(System.console().readLine());
 
         boolean esPrimo = true;
