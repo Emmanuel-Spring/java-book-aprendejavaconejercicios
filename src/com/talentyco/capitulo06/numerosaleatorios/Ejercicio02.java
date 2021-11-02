@@ -56,7 +56,6 @@ public class Ejercicio02 {
             default:
                 carta = String.valueOf(numeroCarta);
         }
-
         System.out.println(carta + " de " + palo);
     }
 }

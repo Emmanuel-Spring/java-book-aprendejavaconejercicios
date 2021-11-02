@@ -10,7 +10,7 @@ package com.talentyco.capitulo06.numerosaleatorios;
  * @book Aprende Java con ejercicios, 2019, JL Sánchez González
  */
 
-public class Ejercicio05RLibro {
+public class Ejercicio05_v01 {
     public static void main(String[] args) {
 
         int maximo = 100;

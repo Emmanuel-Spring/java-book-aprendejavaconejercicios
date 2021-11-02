@@ -10,7 +10,7 @@ package com.talentyco.capitulo06.numerosaleatorios;
  * @book Aprende Java con ejercicios, 2019, JL Sánchez González
  */
 
-public class Ejercicio04RLibro {
+public class Ejercicio04_v01 {
     public static void main(String[] args) {
 
         System.out.println("Diez números aleatorios de 1 al 10 (incluídos):\n");

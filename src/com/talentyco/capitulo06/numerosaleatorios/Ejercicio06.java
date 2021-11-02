@@ -26,6 +26,7 @@ public class Ejercicio06 {
 
         System.out.println("Estoy pensando un número del 0 al 100, intenta adivinarlo. \nTienes 5 oportunidades");
 
+
         do {
             System.out.println("Introduce un número: ");
             numeroIntroducido = entrada.nextInt();

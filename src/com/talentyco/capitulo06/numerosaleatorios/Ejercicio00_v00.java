@@ -9,7 +9,7 @@ package com.talentyco.capitulo06.numerosaleatorios;
  * @book Aprende Java con ejercicios, 2019, JL Sánchez González
  */
 
-public class Ejercicio00Libro {
+public class Ejercicio00_v00 {
     public static void main(String[] args) {
 
 

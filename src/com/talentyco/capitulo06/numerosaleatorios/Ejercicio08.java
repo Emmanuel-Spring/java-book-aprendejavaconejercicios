@@ -2,7 +2,10 @@ package com.talentyco.capitulo06.numerosaleatorios;
 
 /** Java Random Capítulo 06 : Números Aleatorios
  *
- *
+ * Ejercicio 8
+ * Modifica el programa anterior para que la probabilidad de que salga un 1 sea
+ * de 1/2, la probabilidad de que salga x sea de 1/3 y la probabilidad de que salga
+ * 2 sea de 1/6. Pista: 1/2 = 3/6 y 1/3 = 2/6.
  *
  * @author Emmanuel Nieto Muñoz
  * @version: 10/10/2021/1.0
