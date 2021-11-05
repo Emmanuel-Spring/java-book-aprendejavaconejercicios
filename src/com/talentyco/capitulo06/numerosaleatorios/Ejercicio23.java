@@ -18,6 +18,33 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio23 {
     public static void main(String[] args) {
 
+        String dado = "";
+        int i;
+
+        for ( i = 0; i < 5; i++) {
+            switch ((int) (Math.random() * 6)) {
+                case 0:
+                    dado = "As";
+                    break;
+                case 1:
+                    dado = "K";
+                    break;
+                case 2:
+                    dado = "Q";
+                    break;
+                case 3:
+                    dado = "J";
+                    break;
+                case 4:
+                    dado = "7";
+                    break;
+                case 5:
+                    dado = "8";
+                    break;
+                default:
+            }
+            System.out.print(dado + " ");
+        }
 
 
     }

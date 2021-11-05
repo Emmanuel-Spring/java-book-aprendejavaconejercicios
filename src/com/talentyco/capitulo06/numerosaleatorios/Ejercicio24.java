@@ -1,5 +1,7 @@
 package com.talentyco.capitulo06.numerosaleatorios;
 
+import java.util.Scanner;
+
 /** Java Random Capítulo 06 : Números Aleatorios
  *
  * Ejercicio 24
@@ -23,7 +25,29 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio24 {
     public static void main(String[] args) {
 
+        Long numero;
+        Long numeroIntroducido;
+        int posicion;
+        int longitud;
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("Por favor, introduzca un número entero positivo: ");
+        numeroIntroducido = entrada.nextLong();
 
+        numero = numeroIntroducido;
+
+        // calcula la longitud del número
+        longitud = 0;
+
+        do {
+            numero /= 10;
+            longitud++;
+        } while (numero > 0);
+
+        // elige una posición al azar del número
+        posicion = (int) (Math.random() * longitud ) + 1;
+
+        // extrae el dígito de esa posición
+        System.out.println((numeroIntroducido / (long)(Math.pow(10, longitud - posicion))) % 10);
     }
 }

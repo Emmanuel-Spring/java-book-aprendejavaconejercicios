@@ -1,5 +1,7 @@
 package com.talentyco.capitulo06.numerosaleatorios;
 
+import java.util.Scanner;
+
 /** Java Random Capítulo 06 : Números Aleatorios
  *
  Ejercicio 26
@@ -37,8 +39,35 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio26 {
     public static void main(String[] args) {
 
+        int anchura;
+        int altura;
+        int posicionMordisco;
+        int i;
+        int j;
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("Introduzca la anchura de la tableta: ");
+        anchura = entrada.nextInt();
 
+        System.out.println("Introduzca la altura de la tableta: ");
+        altura = entrada.nextInt();
+
+        posicionMordisco = (int) (Math.random() * (anchura * 2 + (altura - 2) * 2));
+        int posicion = 0;
+        for ( i = 0; i < altura; i++) {
+            for ( j = 0; j < anchura; j++) {
+                boolean estaEnBorde = ( i == 0) || ( i == altura -1) || ( j == 0 ) || ( j == anchura - 1);
+
+                if ((posicion == posicionMordisco) && estaEnBorde) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+                if (estaEnBorde) {
+                    posicion ++;
+                }
+            }
+            System.out.println();
+        }
     }
-
 }

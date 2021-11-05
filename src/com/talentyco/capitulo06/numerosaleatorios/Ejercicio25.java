@@ -16,24 +16,29 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio25 {
     public static void main(String[] args) {
 
+        int i;
+        int j;
+        int numero;
 
 
-    }
+        for ( i = 0; i < 100; i++) {
+            numero = (int) (Math.random() * 191) + 10;
 
-    /** Java Random Capítulo 06 : Números Aleatorios
-     *
-     *
-     *
-     * @author Emmanuel Nieto Muñoz
-     * @version: 10/10/2021/1.0
-     * @book Aprende Java con ejercicios, 2019, JL Sánchez González
-     */
+            // Comprueba si el número es primo
+            boolean esPrimo = true;
+            for ( j = 2; j < numero; j++ ) {
+                if (( numero % j ) == 0 ) {
+                    esPrimo = false;
+                }
+            }
 
-    public static class Ejercicio23 {
-        public static void main(String[] args) {
-
-
-
-        }
+            if (esPrimo) {
+                System.out.print(" #" + numero + "# ");
+            } else if ((numero % 5) == 0) {
+                System.out.print(" [" + numero + "] ");
+            } else {
+                System.out.print(" " + numero + " ");
+            }
+        }  // for
     }
 }

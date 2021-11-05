@@ -1,5 +1,7 @@
 package com.talentyco.capitulo06.numerosaleatorios;
 
+import java.util.Scanner;
+
 /** Java Random Capítulo 06 : Números Aleatorios
  *
  *  Ejercicio 20
@@ -23,7 +25,27 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio20 {
     public static void main(String[] args) {
 
+        int capacidad;
+        int litros;
+        int i;
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("Por favor, ingrese la capacidad de la cuba en litros: ");
+        capacidad = entrada.nextInt();
 
+        //  Rellena la cuba con unos litros aleatorios
+        // teniendo en cuenta no pasarse de la capacidad
+        litros = ( int ) ( Math.random() * ( capacidad + 1 ));
+
+        for (i = 0; i < capacidad; i++) {
+            if ( i < (capacidad - litros)) {
+                System.out.println("#    #");  // Capacidad de la cuba vacía
+            } else {
+                System.out.println("======");  //  capacidad de la cuba con n litros de agua
+            }
+        }
+        System.out.println("######");  // fondo de la cuba, es la base
+        System.out.println("La cuba tiene una capacidad de  " + capacidad);
+        System.out.println(" litros y contiene " + litros + " litros de agua.");
     }
 }

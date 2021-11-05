@@ -1,5 +1,7 @@
 package com.talentyco.capitulo06.numerosaleatorios;
 
+import java.util.Scanner;
+
 /** Java Random Capítulo 06 : Números Aleatorios
  *
  Ejercicio 32
@@ -40,8 +42,40 @@ package com.talentyco.capitulo06.numerosaleatorios;
 public class Ejercicio32 {
     public static void main(String[] args) {
 
+        Scanner entrada =  new Scanner(System.in);
 
+        System.out.println("Introduzca la longitud del sendero en metros:   ");
+        int longitudSendero = entrada.nextInt();
 
+        int espaciosPorDelante = 6;
+
+        for (int i = 0; i < longitudSendero; i++ ) {
+            for (int j = 0; j < espaciosPorDelante; j++) {
+                System.out.print(' ');
+            }
+
+            // Borde izquierod del sendero
+            System.out.print('0');
+
+            // Parte interior del sendero
+            int posicionObstaculo = -1;
+            String obstaculo = "O";   // planta por defecto
+
+            if ((int) (Math.random() * 2) == 0 ) {   // No hay Obstaculo
+                posicionObstaculo = (int) (Math.random() * 4 );
+                if ((int) (Math.random() * 2 ) == 0) {   // Piedra
+                    obstaculo = "O";
+                }
+            }
+
+            for (int j = 0; j < 4; j++) {
+                System.out.print(j == posicionObstaculo ? obstaculo : ' ');
+            }
+
+            // Borde derecho del sendero
+            System.out.println('O');
+
+            espaciosPorDelante += (int) (Math.random() * 3) -1;
+        }
     }
-
 }
