@@ -28,6 +28,7 @@ public class Ejercicio20 {
         int capacidad;
         int litros;
         int i;
+
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Por favor, ingrese la capacidad de la cuba en litros: ");
