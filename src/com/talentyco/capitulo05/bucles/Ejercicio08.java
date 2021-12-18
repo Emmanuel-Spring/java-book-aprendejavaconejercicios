@@ -24,6 +24,7 @@ public class Ejercicio08 {
 
         for (int i = 0; i <= 10; i++) {
             System.out.println(numeroIntroducido + " x " + i + " = " + numeroIntroducido * i);
+
         }
     }
 }

@@ -43,6 +43,7 @@ public class Ejercicio07 {
                 System.out.println("Ha abierto la caja fuerte");
             } else {
                 System.out.println("Lo siento, ha agotado las 4 oportunidades.");
+
             }
         }
 }
