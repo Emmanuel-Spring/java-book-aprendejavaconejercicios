@@ -31,8 +31,7 @@ public class Ejercicio10 {
             numeros++;
             suma += numeroIntroducido;
         }
-
-        System.out.println("La media de los números positivos introducidos es " + (suma - numeroIntroducido) / (numeros - 1));
-
+        System.out.println("La media de los números positivos introducidos es " +
+                (suma - numeroIntroducido) / (numeros - 1));
     }
 }

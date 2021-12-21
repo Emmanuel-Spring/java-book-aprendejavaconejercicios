@@ -32,7 +32,5 @@ public class Ejercicio09 {
 
         System.out.println(numeroIntroducido + " tiene " + numeroDeDigitos + " dígitos/s.");
 
-
-
     }
 }

@@ -1,6 +1,8 @@
 package com.talentyco.capitulo05.bucles;
-    
-/** Java title Capítulo 00:
+
+import java.util.Scanner;
+
+/** Java title Capítulo 05: Bucles
 
     Ejercicio:
 
@@ -14,6 +16,11 @@ package com.talentyco.capitulo05.bucles;
 
 public class Ejercicio13 {
     public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("");
+
 
 
 
