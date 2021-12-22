@@ -2,7 +2,7 @@ package com.talentyco.capitulo05.bucles;
 
 import java.util.Scanner;
 
-/** Java title Capítulo 05: Bucles
+/** Java title Capítulo 05: Bucles 
 
     Ejercicio:
 
